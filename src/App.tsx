@@ -23,7 +23,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <input placeholder="1st Number" type="number" onChange={(e) => setdigitOne(e.target.value as unknown as number)} />
         <input placeholder="2nd Number" type="number" onChange={(e) => setdigitTwo(e.target.value as unknown as number)} />
-        <p>{digitOne} + {digitTwo} = {ans}</p>
+        <p>{digitOne || 0} + {digitTwo || 0} = {ans}</p>
       </header>
     </div>
   );
